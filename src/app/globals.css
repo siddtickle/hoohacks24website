@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono');
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -19,26 +19,52 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #162628;
 }
+
+/* .mainImage{
+  position: 'relative';
+  width: '100vw';
+  height: '95vh';
+} */
 
 .overlayText {
   position: absolute;
-  top: 85%;
-  left: 10%;
+  top: 80%;
+  left: 5%;
   color: white;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  overflow:hidden;
+  display:flex;  
+  overflow-wrap: anywhere;
+}
+.overlayButtons {
+  display: "inline-block";
+  margin-left: 50px;
+  margin-top: 15px;
 }
 
+
+
 h1 {
-  font-family: 'Space Mono';
-  font-size: 80px;
+  font-size: 125px;
+  line-height: 1;
 }
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 45px; /* Adjust the formula as needed */
+  }
+  .overlayText {
+    top: 70%; /* Adjust the formula as needed */
+    left:auto;
+    width:100vw;
+    text-align: center;
+    display:inline-block;
+  }
+  .overlayButtons {
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+}
+
 
