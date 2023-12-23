@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -18,10 +19,142 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #162628;
 }
+
+/* .mainImage{
+  position: 'relative';
+  width: '100vw';
+  height: '95vh';
+} */
+
+.overlayText {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  color: white;
+  overflow:hidden;
+  display:flex;  
+  overflow-wrap: anywhere;
+}
+.overlayButtons {
+  display: "inline-block";
+  margin-left: 50px;
+  margin-top: 15px;
+}
+
+.dateLocation{
+  font-size: 25px;
+  text-align:"left";
+}
+
+.welcomeBox{
+  width: 80vw;
+  height:fit-content;
+  border-radius: 10px;
+  background: rgba(35, 51, 50, 0.80);
+  top:100px;
+  left:10%;
+  position:absolute;
+  margin-left: auto; 
+  margin-right: auto; 
+}
+.welcomeGap{
+  height: 125px;
+}
+.welcomeText{
+  font-size: 25px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 125px;
+  color: rgba(255, 255, 255, 0.60);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.2px;
+}
+.welcomeTitle{
+  font-size: 50px;
+  color: #FFF;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 4.8px;
+
+}
+h1 {
+  font-size: 110px;
+  line-height: 1;
+}
+
+.statsContainer{
+  margin-left:12vw;
+  margin-top:-50px;
+  display:flex;
+  margin-bottom: 30px;
+
+}
+
+.statsTitle{
+  font-size: 25px;
+  margin-top: 100px;
+  color: rgba(255, 255, 255, 0.60);
+
+}
+.statsNumber{
+  font-size: 60px;
+  margin-bottom: -10px;
+}
+.carImage{
+  margin-top: 50px;
+  width:40%;
+  right:0%; 
+  position: absolute;
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 45px; /* Adjust the formula as needed */
+  }
+  .overlayText {
+    top: 70%; /* Adjust the formula as needed */
+    left:auto;
+    width:100vw;
+    text-align: center;
+    display:inline-block;
+  }
+  .overlayButtons {
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .welcomeText{
+    font-size: 15px;
+    margin-bottom:20px;
+  }
+  .welcomeGap{
+    height: 20px;
+  }
+  .welcomeTitle{
+    font-size: 40px;
+  }
+  .welcomeBox{
+    left:3%;
+    width:95vw;
+  }
+  .statsContainer{
+    margin-top:-50px;
+    display:block;
+  }
+  .statsTitle{
+    font-size: 20px;
+  }
+  .statsNumber{
+    font-size: 40px;
+  }
+  .carImage{
+    margin-top: 40px;
+    width:80%;
+  }
+}
+
+
