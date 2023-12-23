@@ -27,7 +27,6 @@ export default function Welcome() {
   });
 
   useEffect(() => {
-    console.log(isInView)
     if (isInView) {
         replay();
     }
@@ -38,7 +37,7 @@ export default function Welcome() {
     <div style={{ marginTop: 80, position:'relative',margin:"auto"}}>
       <div className='welcomeBox'>
         <div className='welcomeGap'/>
-        <h2 className={ubuntu.className + " welcomeTitle"} style={{textAlign: 'center'}}ref={ref}> WELCOME!</h2>
+        <h2 className={ubuntu.className + " welcomeTitle"} style={{textAlign: 'center', marginBottom:20}}ref={ref}> WELCOME!</h2>
         <p
           className={space_mono.className + " welcomeText"}
           ref={textRef}
@@ -46,7 +45,7 @@ export default function Welcome() {
         >
         </p>
       </div>
-      <img src="/assets/lasers.png" alt="lasers" style={{width:"100%", minHeight:800}}/>
+      <img src="/assets/lasers.png" alt="lasers" style={{width:"100%", minHeight:600, maxHeight:800}}/>
     </div>
   );
 }
