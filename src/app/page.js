@@ -1,32 +1,30 @@
-'use client'
-import Image from 'next/image';
-import { Navbar } from './components/Navbar';
-import styles from './globals.css';
-import { Space_Mono, Ubuntu } from 'next/font/google'
-import { useScramble } from 'use-scramble';
-import ShareLocationIcon from '@mui/icons-material/ShareLocation';
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-import Welcome from './components/Welcome';
-import Statistics from './components/Statistics';
+"use client";
+import Image from "next/image";
+import Navbar from "./components/Navbar";
+import styles from "./globals.css";
+import { Space_Mono, Ubuntu } from "next/font/google";
+import { useScramble } from "use-scramble";
+import ShareLocationIcon from "@mui/icons-material/ShareLocation";
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import Welcome from "./components/Welcome";
+import Statistics from "./components/Statistics";
 
- 
-const space_mono = Space_Mono({ weight: '400', subsets: ['latin']})
-const ubuntu = Ubuntu({ weight: '400', subsets: ['latin']})
-
+const space_mono = Space_Mono({ weight: "400", subsets: ["latin"] });
+const ubuntu = Ubuntu({ weight: "400", subsets: ["latin"] });
 
 export default function Home() {
   const { ref } = useScramble({
-    text: 'HooHacks_2024',
+    text: "HooHacks_2024",
     speed: 0.3,
     tick: 1,
     step: 1,
     scramble: 5,
-    overdrive: false
+    overdrive: false,
   });
   return (
-    <main style={{overflow:"hidden", marginBottom:50}}>
+    <main style={{ overflow: "hidden", marginBottom: 50 }}>
       <Navbar />
-      <div style={{ position: 'relative', width: '100vw', height: '100vh' }}>
+      <div style={{ position: "relative", width: "100vw", height: "100vh" }}>
         <Image
           src="/assets/main_landing.png"
           alt="Landing Page"
@@ -36,21 +34,44 @@ export default function Home() {
         />
       </div>
       <div className="overlayText">
-        <h1 className={space_mono.className} style={{fontWeight:"Bold", marginTop:25}} ref={ref}/>
+        <h1
+          className={space_mono.className}
+          style={{ fontWeight: "Bold", marginTop: 25 }}
+          ref={ref}
+        />
         <div className="overlayButtons">
           <div className="dateLocation">
-          <h2 className={ubuntu.className} ><CalendarMonthIcon style={{marginTop:-5}}/> March 23-24</h2>
-          <h2 className={ubuntu.className}><ShareLocationIcon style={{marginTop:-5, marginRight:5}}/>University of Virginia</h2>
+            <h2 className={ubuntu.className}>
+              <CalendarMonthIcon style={{ marginTop: -5 }} /> March 23-24
+            </h2>
+            <h2 className={ubuntu.className}>
+              <ShareLocationIcon style={{ marginTop: -5, marginRight: 5 }} />
+              University of Virginia
+            </h2>
+          </div>
+          <div>
+            <button
+              className={
+                space_mono.className +
+                " bg-teal-700 hover:bg-teal-900 text-white font-bold py-3 px-10 text-l rounded-full"
+              }
+            >
+              REGISTER
+            </button>
+            <button
+              className={
+                space_mono.className +
+                " bg-teal-700 hover:bg-teal-900 text-white font-bold py-3 px-10 text-l rounded-full"
+              }
+              style={{ marginLeft: "15px", marginTop: "10px" }}
+            >
+              SPONSOR
+            </button>
+          </div>
         </div>
-      <div>
-      <button className={space_mono.className+" bg-teal-700 hover:bg-teal-900 text-white font-bold py-3 px-10 text-l rounded-full"}>REGISTER</button>
-      <button className={space_mono.className+" bg-teal-700 hover:bg-teal-900 text-white font-bold py-3 px-10 text-l rounded-full"} style={{ marginLeft: "15px", marginTop:"10px" }}>SPONSOR</button>
-      </div>
-      </div>
       </div>
       <Welcome />
       <Statistics />
-     
     </main>
   );
 }
