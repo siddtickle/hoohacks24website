@@ -11,9 +11,9 @@ const Navbar = () => {
             <Link legacyBehavior href="/">
               <img
                 // TODO: update to SVG instead of PNG
-                src="/images/hoohacks-navbar-logo.png"
+                src="/images/hoohacks-owl-logo.svg"
                 alt="Hoohacks Logo"
-                className="h-12"
+                className="h-10"
               />
             </Link>
           </div>
