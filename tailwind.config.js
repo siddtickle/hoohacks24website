@@ -13,7 +13,12 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       backgroundColor: {
-        customColor: "#0D080C",
+        customColor: "rgba(13, 8, 12, 0.8)",
+        customColor1: "#090F11",
+        customColor2: "#2B3F3C",
+      },
+      borderColor: {
+        customStrokeColor: "#55725E",
       },
     },
   },

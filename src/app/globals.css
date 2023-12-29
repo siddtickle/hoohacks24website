@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -33,8 +32,8 @@ body {
   top: 80%;
   left: 5%;
   color: white;
-  overflow:hidden;
-  display:flex;  
+  overflow: hidden;
+  display: flex;
   overflow-wrap: anywhere;
 }
 .overlayButtons {
@@ -43,73 +42,115 @@ body {
   margin-top: 15px;
 }
 
-.dateLocation{
+.dateLocation {
   font-size: 25px;
-  text-align:"left";
+  text-align: "left";
 }
 
-.welcomeBox{
+.welcomeBox {
   width: 80vw;
-  height:fit-content;
+  height: fit-content;
   border-radius: 10px;
-  background: rgba(35, 51, 50, 0.80);
-  top:100px;
-  left:10%;
-  position:absolute;
-  margin-left: auto; 
-  margin-right: auto; 
+  background: rgba(35, 51, 50, 0.8);
+  top: 100px;
+  left: 10%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
 }
-.welcomeGap{
+.welcomeGap {
   height: 125px;
 }
-.welcomeText{
+.welcomeText {
   font-size: 25px;
   margin-left: 5vw;
   margin-right: 5vw;
   margin-bottom: 125px;
-  color: rgba(255, 255, 255, 0.60);
+  color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 3.2px;
 }
-.welcomeTitle{
+.welcomeTitle {
   font-size: 50px;
-  color: #FFF;
+  color: #fff;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 4.8px;
-
 }
 h1 {
   font-size: 110px;
   line-height: 1;
 }
 
-.statsContainer{
-  margin-left:12vw;
-  margin-top:-50px;
-  display:flex;
+.statsContainer {
+  margin-left: 12vw;
+  margin-top: -50px;
+  display: flex;
   margin-bottom: 30px;
-
 }
 
-.statsTitle{
+.statsTitle {
   font-size: 25px;
   margin-top: 100px;
-  color: rgba(255, 255, 255, 0.60);
-
+  color: rgba(255, 255, 255, 0.6);
 }
-.statsNumber{
+.statsNumber {
   font-size: 60px;
   margin-bottom: -10px;
 }
-.carImage{
+.carImage {
   margin-top: 50px;
-  width:40%;
-  right:0%; 
+  width: 40%;
+  right: 0%;
   position: absolute;
+}
+
+.FAQContainer {
+  margin-top: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.FAQTitle {
+  font-size: 24px;
+}
+
+.FAQContent {
+  font-size: 16px;
+}
+
+.FAQGrid {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  position: absolute;
+  width: 70%;
+  grid-row-gap: 55px;
+}
+
+.FAQItem {
+  padding: 20px;
+  text-align: center;
+}
+
+.FAQImage {
+  width: 76%;
+}
+
+.FAQContainerTitle {
+  display: none;
+  font-size: 36px;
+  margin-bottom: -160px;
+  z-index: 0;
+  align-self: self-start !important;
+  margin-left: 300px;
 }
 
 @media screen and (max-width: 500px) {
@@ -118,43 +159,41 @@ h1 {
   }
   .overlayText {
     top: 70%; /* Adjust the formula as needed */
-    left:auto;
-    width:100vw;
+    left: auto;
+    width: 100vw;
     text-align: center;
-    display:inline-block;
+    display: inline-block;
   }
   .overlayButtons {
     margin-top: 10px;
     margin-left: 0px;
   }
-  .welcomeText{
+  .welcomeText {
     font-size: 15px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
   }
-  .welcomeGap{
+  .welcomeGap {
     height: 20px;
   }
-  .welcomeTitle{
+  .welcomeTitle {
     font-size: 40px;
   }
-  .welcomeBox{
-    left:3%;
-    width:95vw;
+  .welcomeBox {
+    left: 3%;
+    width: 95vw;
   }
-  .statsContainer{
-    margin-top:-50px;
-    display:block;
+  .statsContainer {
+    margin-top: -50px;
+    display: block;
   }
-  .statsTitle{
+  .statsTitle {
     font-size: 20px;
   }
-  .statsNumber{
+  .statsNumber {
     font-size: 40px;
   }
-  .carImage{
+  .carImage {
     margin-top: 40px;
-    width:80%;
+    width: 80%;
   }
 }
-
-

@@ -8,6 +8,9 @@ import ShareLocationIcon from "@mui/icons-material/ShareLocation";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import Welcome from "./components/Welcome";
 import Statistics from "./components/Statistics";
+import FAQ from "./components/FAQ";
+import Footer from "./components/Footer";
+import Newsletter from "./components/Newsletter";
 
 const space_mono = Space_Mono({ weight: "400", subsets: ["latin"] });
 const ubuntu = Ubuntu({ weight: "400", subsets: ["latin"] });
@@ -23,16 +26,19 @@ export default function Home() {
   });
   return (
     <main style={{ overflow: "hidden", marginBottom: 50 }}>
-      <Navbar />
-      <div style={{ position: "relative", width: "100vw", height: "100vh" }}>
-        <Image
-          src="/assets/main_landing.png"
-          alt="Landing Page"
-          layout="fill"
-          objectFit="cover"
-          priority={true}
-        />
+      <div className="relative">
+        <Navbar />
+        <div style={{ position: "relative", width: "100vw", height: "100vh" }}>
+          <Image
+            src="/assets/main_landing.png"
+            alt="Landing Page"
+            layout="fill"
+            objectFit="cover"
+            priority={true}
+          />
+        </div>
       </div>
+
       <div className="overlayText">
         <h1
           className={space_mono.className}
@@ -72,6 +78,9 @@ export default function Home() {
       </div>
       <Welcome />
       <Statistics />
+      <FAQ />
+      <Newsletter />
+      <Footer />
     </main>
   );
 }

@@ -1,6 +1,9 @@
 // components/Navbar.js
 
 import Link from "next/link";
+import { Mohave } from "next/font/google";
+
+const mohave = Mohave({ weight: "400", subsets: ["latin"] });
 
 const Navbar = () => {
   return (
@@ -10,7 +13,6 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link legacyBehavior href="/">
               <img
-                // TODO: update to SVG instead of PNG
                 src="/images/hoohacks-owl-logo.svg"
                 alt="Hoohacks Logo"
                 className="h-10"
@@ -18,7 +20,11 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <div className="hidden md:flex items-center space-x-4 ${styles['font-mohave']}`}">
+          <div
+            className={
+              mohave.className + " hidden md:flex items-center space-x-4"
+            }
+          >
             <Link legacyBehavior href="/">
               <a className="text-white">Home</a>
             </Link>
@@ -35,6 +41,7 @@ const Navbar = () => {
               <a className="text-white">Newsletter</a>
             </Link>
           </div>
+          <div>{/* placeholder */}</div>
           <div className="md:hidden">{/* hide buttons when small */}</div>
         </div>
       </nav>
