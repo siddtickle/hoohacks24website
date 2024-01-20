@@ -71,7 +71,7 @@ export default function Statistics() {
                 <h2 className={mohave.className +" statsNumber"} ref={textRef3}/>
                 <h2 className={mohave.className +" statsNumber"} ref={textRef4}/>
             </div>
-                <img src="/assets/car.png" alt="car" className='carImage'/>
+                <img src="/assets/car.svg" alt="car" className='carImage'/>
         </div>
     )
 
