@@ -85,6 +85,12 @@ h1 {
   line-height: 1;
 }
 
+.statsContainer{
+  margin-left:12vw;
+  margin-top:-50px;
+  display:flex;
+  margin-bottom: 200px;
+
 .statsContainer {
   margin-left: 12vw;
   margin-top: -50px;
@@ -157,6 +163,23 @@ html {
   scroll-behavior: smooth;
 }
 
+.sponsorContainer{
+  margin-bottom: 100px;
+
+}
+
+.wordCloudContainer{
+
+}
+
+.wordCloud {
+  background: repeat-x; /* This is how 'repeat-x' is used */
+  text-align: center;
+  width: 100vw;
+  position: relative;
+  animation: clouds 100000s linear infinite; /* Adjust the duration as needed */
+}
+
 @media screen and (max-width: 500px) {
   h1 {
     font-size: 45px; /* Adjust the formula as needed */
@@ -186,9 +209,10 @@ html {
     left: 3%;
     width: 95vw;
   }
-  .statsContainer {
-    margin-top: -50px;
-    display: block;
+  .statsContainer{
+    margin-top:-50px;
+    display:block;
+    margin-bottom: 400px;
   }
   .statsTitle {
     font-size: 20px;
@@ -200,4 +224,18 @@ html {
     margin-top: 40px;
     width: 80%;
   }
+}
+
+*{
+	margin:0;
+	padding:0;
+}
+@keyframes ani{
+	0%{background-position: 0 0;}
+	100%{background-position: 100vw 0;}
+}
+.wordCloud{
+	background:url('../../public/assets/wordcloud.svg') repeat-x 0 / 100% auto;
+	height:500px; /* this value is not important, just not zero */
+	animation: ani 40s linear infinite ;
 }

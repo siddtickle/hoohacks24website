@@ -11,6 +11,8 @@ import Statistics from "./components/Statistics";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import Newsletter from "./components/Newsletter";
+import Sponsor from "./components/Sponsor";
+import WordCloud from "./components/WordCloud";
 
 const space_mono = Space_Mono({ weight: "400", subsets: ["latin"] });
 const ubuntu = Ubuntu({ weight: "400", subsets: ["latin"] });
@@ -59,7 +61,7 @@ export default function Home() {
             <button
               className={
                 space_mono.className +
-                " bg-teal-700 hover:bg-teal-900 text-white font-bold py-3 px-10 text-l rounded-full"
+                " bg-teal-700 hover:bg-teal-900 text-white font-bold py-3 px-10 text-l rounded-lg"
               }
             >
               REGISTER
@@ -67,7 +69,7 @@ export default function Home() {
             <button
               className={
                 space_mono.className +
-                " bg-teal-700 hover:bg-teal-900 text-white font-bold py-3 px-10 text-l rounded-full"
+                " bg-teal-700 hover:bg-teal-900 text-white font-bold py-3 px-10 text-l rounded-lg"
               }
               style={{ marginLeft: "15px", marginTop: "10px" }}
             >
@@ -79,7 +81,9 @@ export default function Home() {
       <Welcome id="about" />
       <Statistics />
       <FAQ id="faq" />
+      <Sponsor />
       <Newsletter id="newsletter" />
+      <WordCloud />
       <Footer />
     </main>
   );
