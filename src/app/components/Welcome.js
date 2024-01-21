@@ -34,7 +34,7 @@ export default function Welcome() {
 
 
   return (
-    <div style={{ marginTop: 80, position:'relative',margin:"auto"}}>
+    <div style={{ marginTop: 80, position:'relative',margin:"auto"}} id="about">
       <div className='welcomeBox'>
         <div className='welcomeGap'/>
         <h2 className={ubuntu.className + " welcomeTitle"} style={{textAlign: 'center', marginBottom:20}}ref={ref}> WELCOME!</h2>

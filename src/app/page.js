@@ -11,11 +11,14 @@ import Statistics from "./components/Statistics";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import Newsletter from "./components/Newsletter";
+import { useRef } from "react";
 
 const space_mono = Space_Mono({ weight: "400", subsets: ["latin"] });
 const ubuntu = Ubuntu({ weight: "400", subsets: ["latin"] });
 
 export default function Home() {
+  const {aboutRef, faqRef, sponsorRef, newsletterRef} = useRef(null);
+
   const { ref } = useScramble({
     text: "HooHacks_2024",
     speed: 0.3,
@@ -24,6 +27,7 @@ export default function Home() {
     scramble: 5,
     overdrive: false,
   });
+
   return (
     <main style={{ overflow: "hidden", marginBottom: 50 }}>
       <div id="home" className="relative">
@@ -76,10 +80,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Welcome id="about" />
+      <Welcome />
       <Statistics />
-      <FAQ id="faq" />
-      <Newsletter id="newsletter" />
+      <FAQ />
+      <Newsletter/>
       <Footer />
     </main>
   );

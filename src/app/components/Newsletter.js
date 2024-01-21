@@ -81,6 +81,7 @@ export default function Newsletter() {
         height: "100%",
         width: "100%",
       }}
+      id="newsletter"
     >
       <div
         className="relative flex flex-col items-center"

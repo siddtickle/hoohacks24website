@@ -82,7 +82,7 @@ export default function FAQ() {
   }, [isInView]);
 
   return (
-    <div className="FAQContainer">
+    <div className="FAQContainer" id="faq">
       <h3 className={space_mono.className + " FAQContainerTitle"} ref={ref}>
         Frequently Asked Questions
       </h3>

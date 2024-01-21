@@ -54,7 +54,7 @@ const Navbar = () => {
               Sponsors
               {/* <a className="text-white">Sponsors</a> */}
             </Link>
-            <Link href="/#newsletter" scroll={false}>
+            <Link href="/#newsletter">
               Newsletter
               {/* <a className="text-white">Newsletter</a> */}
             </Link>
