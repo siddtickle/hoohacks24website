@@ -36,25 +36,12 @@ const Navbar = () => {
               About
               {/* <a className="text-white">About</a> */}
             </Link>
-            <Link href="/#faq">
-              FAQ
-              {/* <a
-              className="text-white"
-              onClick={() =>
-                pass.current.scrollIntoView({
-                  behavior: "smooth",
-                  block: "start",
-                })
-              }
-            >
-              FAQ
-            </a> */}
-            </Link>
+            <Link href="/#faq">FAQ</Link>
             <Link href="/#sponsor">
               Sponsors
               {/* <a className="text-white">Sponsors</a> */}
             </Link>
-            <Link href="/#newsletter" scroll={false}>
+            <Link href="/#newsletter">
               Newsletter
               {/* <a className="text-white">Newsletter</a> */}
             </Link>

@@ -76,6 +76,7 @@ export default function Newsletter() {
 
   return (
     <div
+      id="newsletter"
       className="flex justify-center items-center h-screen mt-32 mb-32"
       style={{
         height: "100%",
@@ -134,7 +135,7 @@ export default function Newsletter() {
           <input type="hidden" name="u" value="8db3fa0f566f9edea113259df" />
           <input type="hidden" name="id" value="b74b5fd33d" />
           <h2
-            className={`text-white text-2xl font-bold mb-4 text-center ${space_mono.className}`}
+            className={`text-white font-bold mb-4 text-center ${space_mono.className}`}
             style={{
               color: "white",
               fontSize: 36,

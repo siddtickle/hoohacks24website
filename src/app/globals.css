@@ -19,6 +19,7 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: #162628;
+  min-width: 1500px;
 }
 
 /* .mainImage{
@@ -85,18 +86,19 @@ h1 {
   line-height: 1;
 }
 
-.statsContainer{
-  margin-left:12vw;
-  margin-top:-50px;
-  display:flex;
-  margin-bottom: 200px;
-
 .statsContainer {
   margin-left: 12vw;
   margin-top: -50px;
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 200px;
 }
+
+/* .statsContainer {
+  margin-left: 12vw;
+  margin-top: -50px;
+  display: flex;
+  margin-bottom: 30px;
+} */
 
 .statsTitle {
   font-size: 25px;
@@ -116,6 +118,7 @@ h1 {
 
 .FAQContainer {
   margin-top: 300px;
+  margin-bottom: 100px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -163,13 +166,11 @@ html {
   scroll-behavior: smooth;
 }
 
-.sponsorContainer{
+.sponsorContainer {
   margin-bottom: 100px;
-
 }
 
-.wordCloudContainer{
-
+.wordCloudContainer {
 }
 
 .wordCloud {
@@ -209,9 +210,9 @@ html {
     left: 3%;
     width: 95vw;
   }
-  .statsContainer{
-    margin-top:-50px;
-    display:block;
+  .statsContainer {
+    margin-top: -50px;
+    display: block;
     margin-bottom: 400px;
   }
   .statsTitle {
@@ -226,16 +227,20 @@ html {
   }
 }
 
-*{
-	margin:0;
-	padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
-@keyframes ani{
-	0%{background-position: 0 0;}
-	100%{background-position: 100vw 0;}
+@keyframes ani {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100vw 0;
+  }
 }
-.wordCloud{
-	background:url('../../public/assets/wordcloud.svg') repeat-x 0 / 100% auto;
-	height:500px; /* this value is not important, just not zero */
-	animation: ani 40s linear infinite ;
+.wordCloud {
+  background: url("../../public/assets/wordcloud.svg") repeat-x 0 / 100% auto;
+  height: 500px; /* this value is not important, just not zero */
+  animation: ani 40s linear infinite;
 }

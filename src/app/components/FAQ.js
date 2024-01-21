@@ -16,57 +16,57 @@ export default function FAQ() {
 
   const { ref: textRef, replay: replay1 } = useScramble({
     text: "A hackathon is a 24-hour tech event for teams of students to learn new skills, build cool tech projects, and meet tons of other students and tech professionals. There's food, awesome workshops, and super cool swag. ",
-    speed: 0.5,
-    tick: 1,
-    step: 10,
-    scramble: 5,
-    overdrive: true,
+    speed: 0,
+    tick: 0,
+    step: 0,
+    scramble: 0,
+    overdrive: false,
     playOnMount: false,
   });
   const { ref: textRef2, replay: replay2 } = useScramble({
     text: "There is absolutely no cost for attending UVA’s hackathon! We'll provide the resources for you to participate comfortably.",
-    speed: 0.5,
-    tick: 1,
-    step: 10,
-    scramble: 5,
-    overdrive: true,
+    speed: 0,
+    tick: 0,
+    step: 0,
+    scramble: 0,
+    overdrive: false,
     playOnMount: false,
   });
   const { ref: textRef3, replay: replay3 } = useScramble({
     text: "If you are planning to compete for a prize, you may be in a team of 1-4 people. If you don't have one yet, no worries! We will have a team formation workshop before hacking begins.",
-    speed: 0.5,
-    tick: 1,
-    step: 10,
-    scramble: 5,
-    overdrive: true,
+    speed: 0,
+    tick: 0,
+    step: 0,
+    scramble: 0,
+    overdrive: false,
     playOnMount: false,
   });
   const { ref: textRef4, replay: replay4 } = useScramble({
     text: "All current undergraduate, graduate, and high school students at least 16 years of age may attend HooHacks. <strong>No coding experience is necessary!</strong> Non-STEM majors, first-time hackers, and beginner coders are welcomed and encouraged to join us!",
-    speed: 0.5,
-    tick: 1,
-    step: 10,
-    scramble: 5,
-    overdrive: true,
+    speed: 0,
+    tick: 0,
+    step: 0,
+    scramble: 0,
+    overdrive: false,
     playOnMount: false,
   });
 
   const { ref: textRef5, replay: replay5 } = useScramble({
     text: "Schedule, location, team information, and more.",
-    speed: 0.5,
-    tick: 1,
-    step: 10,
-    scramble: 5,
-    overdrive: true,
+    speed: 0,
+    tick: 0,
+    step: 0,
+    scramble: 0,
+    overdrive: false,
     playOnMount: false,
   });
   const { ref: textRef6, replay: replay6 } = useScramble({
     text: "Feel free to contact us at <a href='mailto:team@hoohacks.io' style='text-decoration: underline; font-weight: bold;'>team@hoohacks.io</a> or message us on <a href='https://www.facebook.com/hoohacks' style='text-decoration: underline; font-weight: bold;'>Facebook</a> if you have any questions, concerns, or feedback!",
-    speed: 0.5,
-    tick: 1,
-    step: 10,
-    scramble: 5,
-    overdrive: true,
+    speed: 0,
+    tick: 0,
+    step: 0,
+    scramble: 0,
+    overdrive: false,
     playOnMount: false,
   });
 
@@ -82,7 +82,7 @@ export default function FAQ() {
   }, [isInView]);
 
   return (
-    <div className="FAQContainer">
+    <div id="faq" className="FAQContainer">
       <h3 className={space_mono.className + " FAQContainerTitle"} ref={ref}>
         Frequently Asked Questions
       </h3>

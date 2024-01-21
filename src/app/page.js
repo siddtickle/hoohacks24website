@@ -80,9 +80,9 @@ export default function Home() {
       </div>
       <Welcome id="about" />
       <Statistics />
-      <FAQ id="faq" />
+      <FAQ />
       <Sponsor />
-      <Newsletter id="newsletter" />
+      <Newsletter />
       <WordCloud />
       <Footer />
     </main>
