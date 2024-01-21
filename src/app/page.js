@@ -26,7 +26,7 @@ export default function Home() {
   });
   return (
     <main style={{ overflow: "hidden", marginBottom: 50 }}>
-      <div className="relative">
+      <div id="home" className="relative">
         <Navbar />
         <div style={{ position: "relative", width: "100vw", height: "100vh" }}>
           <Image
@@ -76,10 +76,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Welcome />
+      <Welcome id="about" />
       <Statistics />
-      <FAQ />
-      <Newsletter />
+      <FAQ id="faq" />
+      <Newsletter id="newsletter" />
       <Footer />
     </main>
   );

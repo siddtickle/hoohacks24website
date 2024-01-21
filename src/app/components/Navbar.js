@@ -1,14 +1,17 @@
-// components/Navbar.js
-
 import Link from "next/link";
 import { Mohave } from "next/font/google";
-
+import { useRef } from "react";
 const mohave = Mohave({ weight: "400", subsets: ["latin"] });
 
 const Navbar = () => {
+  // const homeRef = useRef(null);
+  // const welcomeRef = useRef(null);
+  // const statisticsRef = useRef(null);
+  // const faqRef = useRef(null);
+
   return (
     <>
-      <nav className="bg-customColor p-4">
+      <nav className="bg-customColor p-4 fixed w-full top-0 z-50">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center">
             <Link legacyBehavior href="/">
@@ -25,20 +28,35 @@ const Navbar = () => {
               mohave.className + " hidden md:flex items-center space-x-4"
             }
           >
-            <Link legacyBehavior href="/">
-              <a className="text-white">Home</a>
+            <Link href="/#home">
+              Home
+              {/* <a className="text-white">Home</a> */}
             </Link>
-            <Link legacyBehavior href="/about">
-              <a className="text-white">About</a>
+            <Link href="/#about">
+              About
+              {/* <a className="text-white">About</a> */}
             </Link>
-            <Link legacyBehavior href="/faq">
-              <a className="text-white">FAQ</a>
+            <Link href="/#faq">
+              FAQ
+              {/* <a
+              className="text-white"
+              onClick={() =>
+                pass.current.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                })
+              }
+            >
+              FAQ
+            </a> */}
             </Link>
-            <Link legacyBehavior href="/sponsors">
-              <a className="text-white">Sponsors</a>
+            <Link href="/#sponsor">
+              Sponsors
+              {/* <a className="text-white">Sponsors</a> */}
             </Link>
-            <Link legacyBehavior href="/newsletter">
-              <a className="text-white">Newsletter</a>
+            <Link href="/#newsletter" scroll={false}>
+              Newsletter
+              {/* <a className="text-white">Newsletter</a> */}
             </Link>
           </div>
           <div>{/* placeholder */}</div>

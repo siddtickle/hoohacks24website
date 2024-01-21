@@ -153,6 +153,10 @@ h1 {
   margin-left: 300px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @media screen and (max-width: 500px) {
   h1 {
     font-size: 45px; /* Adjust the formula as needed */
