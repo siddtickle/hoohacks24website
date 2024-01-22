@@ -64,7 +64,6 @@ const Navbar = () => {
             <Link
               class="hover:text-teal-500"
               href="/#newsletter"
-              target="_blank"
               style={{ fontSize: 20 }}
             >
               Newsletter
