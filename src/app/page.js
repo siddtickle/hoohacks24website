@@ -78,7 +78,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Welcome id="about" />
+      <Welcome />
       <Statistics />
       <FAQ />
       <Sponsor />

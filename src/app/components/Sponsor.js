@@ -29,16 +29,8 @@ export default function Sponsor() {
 
   return (
     <div className="sponsorContainer" ref={ref} id="sponsor">
-      <h2
-        className={space_mono.className + " welcomeTitle"}
-        style={{ textAlign: "center" }}
-        ref={textRef}
-      />
-      <img
-        src="/assets/sponsors.svg"
-        alt="Hoohacks 2024 Sponsors"
-        style={{ width: "100vw" }}
-      />
+      <h2 className={space_mono.className + " welcomeTitle"} ref={textRef} />
+      <img src="/assets/sponsors.svg" alt="Hoohacks 2024 Sponsors" />
     </div>
   );
 }

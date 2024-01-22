@@ -77,10 +77,10 @@ export default function Newsletter() {
   return (
     <div
       id="newsletter"
-      className="flex justify-center items-center h-screen mt-32 mb-32"
+      className="newsletterContainer flex justify-center items-center h-screen mt-32 mb-32"
       style={{
         height: "100%",
-        width: "100%",
+        // width: "100%",
       }}
     >
       <div

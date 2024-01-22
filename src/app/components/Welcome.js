@@ -33,10 +33,7 @@ export default function Welcome() {
   }, [isInView]);
 
   return (
-    <div
-      id="about"
-      style={{ marginTop: 80, position: "relative", margin: "auto" }}
-    >
+    <div id="about" className="welcomeContainer">
       <div className="welcomeBox">
         <div className="welcomeGap" />
         <h2
@@ -44,7 +41,6 @@ export default function Welcome() {
           style={{ textAlign: "center", marginBottom: 20 }}
           ref={ref}
         >
-          {" "}
           WELCOME!
         </h2>
         <p
@@ -54,9 +50,10 @@ export default function Welcome() {
         ></p>
       </div>
       <img
+        className="welcomeImage"
         src="/assets/lasers.png"
         alt="lasers"
-        style={{ width: "100%", minHeight: 600, maxHeight: 800 }}
+        // style={{ width: "100vw", minHeight: 600, maxHeight: 800 }}
       />
     </div>
   );
