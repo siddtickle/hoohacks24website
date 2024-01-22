@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "hoohacks-hack-x"
+  },
+  "targets": {
+    "hoohacks-hack-x": {
+      "hosting": {
+        "hoohacks": [
+          "hoohacks"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
