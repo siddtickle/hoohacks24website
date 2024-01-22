@@ -178,9 +178,9 @@ export default function FAQ() {
         </div>
         <img src="/assets/FAQ.svg" alt="FAQ" className="FAQImage" />
       </div>
-      <div id="faq" className="FAQContainer2">
-        <h3 className={space_mono.className + " FAQContainerTitle"} ref={ref}>
-          Frequently Asked Questions
+      <div id="faq" className={space_mono.className + " FAQContainer2"}>
+        <h3 className={ubuntu.className + " FAQContainerTitle"} ref={ref}>
+          FREQUENTLY ASKED QUESTIONS
         </h3>
         <div className="faqaccordionContainer">
           <Accordion

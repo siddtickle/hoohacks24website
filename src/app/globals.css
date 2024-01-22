@@ -50,7 +50,6 @@ body {
 
 .welcomeBox {
   width: 75vw;
-  height: fit-content;
   border-radius: 10px;
   background: rgba(35, 51, 50, 0.8);
   position: absolute;
@@ -87,6 +86,7 @@ body {
   /* position: absolute; */
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
 
 .welcomeImage {
@@ -208,9 +208,9 @@ html {
   background-color: #162628;
 } */
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1024px) {
   .welcomeImage {
-    max-height: 500px;
+    max-height: 90vh;
   }
   .FAQContainer {
     display: none;
@@ -233,7 +233,7 @@ html {
     font-size: 45px; /* Adjust the formula as needed */
   }
   .overlayText {
-    top: 70%; /* Adjust the formula as needed */
+    top: 70vh; /* Adjust the formula as needed */
     left: auto;
     width: 100vw;
     text-align: center;
@@ -258,7 +258,7 @@ html {
     width: 95vw;
   }
   .statsContainer {
-    margin-top: -50px;
+    margin-top: -200px;
     display: block;
     margin-bottom: 350px;
   }
