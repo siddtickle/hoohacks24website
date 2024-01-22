@@ -25,24 +25,28 @@ const Navbar = () => {
 
           <div
             className={
-              mohave.className + " hidden md:flex items-center space-x-4"
+              mohave.className + " hidden md:flex items-center space-x-6"
             }
           >
-            <Link href="/#home">
+            <Link class="hover:text-teal-500" href="/#home" style={{fontSize:20,}}>
               Home
               {/* <a className="text-white">Home</a> */}
             </Link>
-            <Link href="/#about">
+            <Link class="hover:text-teal-500" href="/#about"  style={{fontSize:20}}>
               About
               {/* <a className="text-white">About</a> */}
             </Link>
-            <Link href="/#faq">FAQ</Link>
-            <Link href="/#sponsor">
+            <Link class="hover:text-teal-500" href="/#faq"  style={{fontSize:20}}>FAQ</Link>
+            <Link class="hover:text-teal-500" href="/#sponsor"  style={{fontSize:20}}>
               Sponsors
               {/* <a className="text-white">Sponsors</a> */}
             </Link>
-            <Link href="/#newsletter">
+            <Link class="hover:text-teal-500" href="/#newsletter" target="_blank" style={{fontSize:20}}>
               Newsletter
+              {/* <a className="text-white">Newsletter</a> */}
+            </Link>
+            <Link class="hover:text-teal-500" href="https://app.hoohacks.io"  style={{fontSize:20}}>
+              Register
               {/* <a className="text-white">Newsletter</a> */}
             </Link>
           </div>
@@ -59,7 +63,7 @@ const Navbar = () => {
           maxWidth: "100px",
           minWidth: "60px",
           position: "fixed",
-          right: "50px",
+          right: "4vw",
           top: "0",
           width: "10%",
           zIndex: "10000",

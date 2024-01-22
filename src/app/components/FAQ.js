@@ -291,8 +291,8 @@ export default function FAQ() {
               Have more questions?
             </AccordionSummary>
             <AccordionDetails>
-              Feel free to contact us at team@hoohacks.io or message us on
-              Facebook if you have any questions, concerns, or feedback!
+              Feel free to contact us at <a href='mailto:team@hoohacks.io' class="text-orange-500">team@hoohacks.io</a> or message us on 
+              <a href='https://www.facebook.com/hoohacks'class="text-orange-500"> Facebook</a> if you have any questions, concerns, or feedback!
             </AccordionDetails>
           </Accordion>
         </div>

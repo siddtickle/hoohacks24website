@@ -57,24 +57,28 @@ export default function Home() {
               University of Virginia
             </h2>
           </div>
-          <div>
-            <button
+          <div style={{height:300}}>
+            <a
               className={
                 space_mono.className +
                 " bg-teal-700 hover:bg-teal-900 text-white font-bold py-3 px-10 text-l rounded-lg"
               }
+              href="https://app.hoohacks.io"
+              target="_blank"
             >
               REGISTER
-            </button>
-            <button
+            </a>
+            <a
               className={
                 space_mono.className +
                 " bg-teal-700 hover:bg-teal-900 text-white font-bold py-3 px-10 text-l rounded-lg"
               }
+              href="https://drive.google.com/file/d/1bJ1FpzB6wKJQAW3I_kDMudLm3t76S70H/view"
+              target="_blank"
               style={{ marginLeft: "15px", marginTop: "10px" }}
             >
               SPONSOR
-            </button>
+            </a>
           </div>
         </div>
       </div>

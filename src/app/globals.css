@@ -19,7 +19,6 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: #162628;
-  min-width: 1500px;
 }
 
 /* .mainImage{
@@ -46,6 +45,7 @@ body {
 .dateLocation {
   font-size: 25px;
   text-align: "left";
+  margin-bottom:15px;
 }
 
 .welcomeBox {
@@ -91,7 +91,7 @@ body {
 
 .welcomeImage {
   width: 100vw;
-  /* height: 100vh; */
+  height: 100vh;
 
   /* overflow: hidden; */
 }
@@ -105,15 +105,9 @@ h1 {
   margin-left: 12vw;
   /* margin-top: -50px; */
   display: flex;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
+  width: 100vw
 }
-
-/* .statsContainer {
-  margin-left: 12vw;
-  margin-top: -50px;
-  display: flex;
-  margin-bottom: 30px;
-} */
 
 .statsTitle {
   font-size: 25px;
@@ -133,7 +127,7 @@ h1 {
 }
 
 .FAQContainer {
-  margin-top: 300px;
+  margin-top: 250px;
   margin-bottom: 100px;
   width: 100vw;
   display: flex;
@@ -143,25 +137,25 @@ h1 {
 }
 
 .FAQTitle {
-  font-size: 24px;
+  font-size: 1.5vw;
 }
 
 .FAQContent {
-  font-size: 16px;
+  font-size: 1vw;
 }
 
 .FAQGrid {
   margin-top: 100px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-gap: 0px;
   position: absolute;
   width: 70%;
-  grid-row-gap: 55px;
+  grid-row-gap: 0px;
 }
 
 .FAQItem {
-  padding: 20px;
+  padding: 5px;
   text-align: center;
 }
 
@@ -194,15 +188,9 @@ html {
 
 .wordCloudContainer {
   width: 100vw;
+  height:50vh
 }
 
-.wordCloud {
-  background: repeat-x; /* This is how 'repeat-x' is used */
-  text-align: center;
-  width: 100vw;
-  position: relative;
-  animation: clouds 100000s linear infinite; /* Adjust the duration as needed */
-}
 
 .newsletterContainer {
   width: 100vw;
@@ -217,6 +205,10 @@ html {
 } */
 
 @media screen and (max-width: 960px) {
+
+  .welcomeImage{
+    max-height:500px;
+  }
   .FAQContainer {
     display: none;
   }
@@ -265,7 +257,7 @@ html {
   .statsContainer {
     margin-top: -50px;
     display: block;
-    margin-bottom: 400px;
+    margin-bottom: 350px;
   }
   .statsTitle {
     font-size: 20px;
@@ -292,7 +284,9 @@ html {
   }
 }
 .wordCloud {
-  background: url("../../public/assets/wordcloud.svg") repeat-x 0 / 100% auto;
-  height: 50vh; /* this value is not important, just not zero */
+  background: url("../../public/assets/wordcloud.svg") repeat-x 0 /  150vh auto;
   animation: ani 40s linear infinite;
+  width: 100vw;
+  height: 50vh; /* this value is not important, just not zero */
+  position: relative;
 }

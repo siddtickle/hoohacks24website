@@ -86,7 +86,7 @@ export default function Newsletter() {
       <div
         className="relative flex flex-col items-center"
         style={{
-          width: "75%",
+          width: "80%",
           height: "100%",
           background: "linear-gradient(358deg, #090F11 0%, #2B3F3C 100%)",
           borderRadius: 20,
@@ -135,10 +135,10 @@ export default function Newsletter() {
           <input type="hidden" name="u" value="8db3fa0f566f9edea113259df" />
           <input type="hidden" name="id" value="b74b5fd33d" />
           <h2
-            className={`text-white font-bold mb-4 text-center ${space_mono.className}`}
+            className={`text-white font-bold mb-4 mt-2 text-center ${space_mono.className}`}
             style={{
               color: "white",
-              fontSize: 36,
+              fontSize: 30,
               fontWeight: "400",
             }}
             ref={ref}
@@ -153,7 +153,7 @@ export default function Newsletter() {
 
           <div className="flex items-center space-x-6 mb-4">
             <p style={{ color: "#2AABF2", fontStyle: "italic" }}>hoohacks</p>
-            <div className="flex space-x-2">
+            <div className="flex flex-wrap space-x-2">
               <p>
                 new.
                 <span style={{ color: "#F78012" }}>user</span>
@@ -180,7 +180,7 @@ export default function Newsletter() {
 
           <div className="flex items-center space-x-6 mt-4 mb-4">
             <p style={{ color: "#2AABF2", fontStyle: "italic" }}>hoohacks</p>
-            <div className="flex space-x-2">
+            <div className="flex flex-wrap space-x-2">
               <p>
                 new.
                 <span style={{ color: "#F78012" }}>user</span>
@@ -207,7 +207,7 @@ export default function Newsletter() {
 
           <div className="flex items-center space-x-6 mt-4 mb-4">
             <p style={{ color: "#2AABF2", fontStyle: "italic" }}>hoohacks</p>
-            <div className="flex space-x-2">
+            <div className="flex flex-wrap space-x-2">
               <p>
                 new.
                 <span style={{ color: "#F78012" }}>user</span>

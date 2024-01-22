@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { Mohave } from "next/font/google";
-import { FaInstagram, FaTwitter, FaDiscord } from "react-icons/fa";
+import { FaInstagram, FaTwitter, FaDiscord, FaLinkedin, FaFacebook } from "react-icons/fa";
 
 const mohave = Mohave({ weight: "400", subsets: ["latin"] });
 
@@ -17,11 +17,14 @@ export default function Footer() {
         <a href="https://www.instagram.com/hoohacks">
           <FaInstagram size={24} />
         </a>
+        <a href="https://www.facebook.com/hoohacks">
+          <FaFacebook size={24} />
+        </a>
         <a href="https://twitter.com/hoohacks">
           <FaTwitter size={24} />
         </a>
-        <a href="https://discord.com/">
-          <FaDiscord size={24} />
+        <a href="https://www.linkedin.com/company/hoohacks">
+          <FaLinkedin size={24} />
         </a>
       </div>
       <p className={mohave.className}>
