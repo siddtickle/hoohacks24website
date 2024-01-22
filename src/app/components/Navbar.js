@@ -45,7 +45,7 @@ const Navbar = () => {
               Newsletter
               {/* <a className="text-white">Newsletter</a> */}
             </Link>
-            <Link class="hover:text-teal-500" href="https://app.hoohacks.io"  style={{fontSize:20}}>
+            <Link class="hover:text-teal-500" href="https://app.hoohacks.io" target="_blank" style={{fontSize:20}}>
               Register
               {/* <a className="text-white">Newsletter</a> */}
             </Link>
