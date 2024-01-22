@@ -25,27 +25,57 @@ const Navbar = () => {
 
           <div
             className={
-              mohave.className + " hidden md:flex items-center space-x-6"
+              "navLinkContainer " +
+              mohave.className +
+              " hidden md:flex items-center space-x-6"
             }
           >
-            <Link class="hover:text-teal-500" href="/#home" style={{fontSize:20,}}>
+            <Link
+              class="hover:text-teal-500"
+              href="/#home"
+              style={{ fontSize: 20 }}
+            >
               Home
               {/* <a className="text-white">Home</a> */}
             </Link>
-            <Link class="hover:text-teal-500" href="/#about"  style={{fontSize:20}}>
+            <Link
+              class="hover:text-teal-500"
+              href="/#about"
+              style={{ fontSize: 20 }}
+            >
               About
               {/* <a className="text-white">About</a> */}
             </Link>
-            <Link class="hover:text-teal-500" href="/#faq"  style={{fontSize:20}}>FAQ</Link>
-            <Link class="hover:text-teal-500" href="/#sponsor"  style={{fontSize:20}}>
+            <Link
+              class="hover:text-teal-500"
+              href="/#faq"
+              style={{ fontSize: 20 }}
+            >
+              FAQ
+            </Link>
+            <Link
+              class="hover:text-teal-500"
+              href="/#sponsor"
+              style={{ fontSize: 20 }}
+            >
               Sponsors
               {/* <a className="text-white">Sponsors</a> */}
             </Link>
-            <Link class="hover:text-teal-500" href="/#newsletter" target="_blank" style={{fontSize:20}}>
+            <Link
+              class="hover:text-teal-500"
+              href="/#newsletter"
+              target="_blank"
+              style={{ fontSize: 20 }}
+            >
               Newsletter
               {/* <a className="text-white">Newsletter</a> */}
             </Link>
-            <Link class="hover:text-teal-500" href="https://app.hoohacks.io" target="_blank" style={{fontSize:20}}>
+            <Link
+              class="hover:text-teal-500"
+              href="https://app.hoohacks.io"
+              target="_blank"
+              style={{ fontSize: 20 }}
+            >
               Register
               {/* <a className="text-white">Newsletter</a> */}
             </Link>

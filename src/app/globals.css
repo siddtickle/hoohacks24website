@@ -45,7 +45,7 @@ body {
 .dateLocation {
   font-size: 25px;
   text-align: "left";
-  margin-bottom:15px;
+  margin-bottom: 15px;
 }
 
 .welcomeBox {
@@ -106,7 +106,7 @@ h1 {
   /* margin-top: -50px; */
   display: flex;
   margin-bottom: 50px;
-  width: 100vw
+  width: 100vw;
 }
 
 .statsTitle {
@@ -157,6 +157,11 @@ h1 {
 .FAQItem {
   padding: 5px;
   text-align: center;
+  color: white;
+}
+
+.navLinkContainer {
+  color: white;
 }
 
 .FAQImage {
@@ -188,9 +193,8 @@ html {
 
 .wordCloudContainer {
   width: 100vw;
-  height:50vh
+  height: 50vh;
 }
-
 
 .newsletterContainer {
   width: 100vw;
@@ -205,9 +209,8 @@ html {
 } */
 
 @media screen and (max-width: 960px) {
-
-  .welcomeImage{
-    max-height:500px;
+  .welcomeImage {
+    max-height: 500px;
   }
   .FAQContainer {
     display: none;
@@ -284,7 +287,7 @@ html {
   }
 }
 .wordCloud {
-  background: url("../../public/assets/wordcloud.svg") repeat-x 0 /  150vh auto;
+  background: url("../../public/assets/wordcloud.svg") repeat-x 0 / 150vh auto;
   animation: ani 40s linear infinite;
   width: 100vw;
   height: 50vh; /* this value is not important, just not zero */
