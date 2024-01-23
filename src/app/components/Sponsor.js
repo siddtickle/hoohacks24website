@@ -5,7 +5,7 @@ import { useScramble } from "use-scramble";
 import { useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
-const space_mono = Ubuntu({ weight: "400", subsets: ["latin"] });
+const ubuntu = Ubuntu({ weight: "400", subsets: ["latin"] });
 
 export default function Sponsor() {
   const ref = useRef(null);
@@ -29,7 +29,7 @@ export default function Sponsor() {
 
   return (
     <div className="sponsorContainer" ref={ref} id="sponsor">
-      <h2 className={space_mono.className + " welcomeTitle"} ref={textRef} />
+      <h2 className={ubuntu.className + " welcomeTitle"} ref={textRef} />
       <img src="/assets/sponsors.svg" alt="Hoohacks 2024 Sponsors" />
     </div>
   );

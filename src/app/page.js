@@ -39,9 +39,7 @@ export default function Home() {
             priority={true}
           />
         </div>
-      </div>
-
-      <div className="overlayText">
+        <div className="overlayText">
         <h1
           className={space_mono.className}
           style={{ fontWeight: "Bold", marginTop: 25 }}
@@ -82,6 +80,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+      </div>
+
       <Welcome />
       <Statistics />
       <FAQ />
