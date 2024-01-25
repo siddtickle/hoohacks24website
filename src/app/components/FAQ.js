@@ -255,7 +255,7 @@ export default function FAQ() {
             </AccordionSummary>
             <AccordionDetails>
               All current undergraduate, graduate, and high school students at
-              least 16 years of age may attend HooHacks. No coding experience is
+              least 18 years of age may attend HooHacks. No coding experience is
               necessary! Non-STEM majors, first-time hackers, and beginner
               coders are welcomed and encouraged to join us!
             </AccordionDetails>
