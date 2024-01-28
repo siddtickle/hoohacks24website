@@ -143,7 +143,7 @@ export default function Newsletter() {
             }}
             ref={ref}
           >
-            Subcribe to Our Newsletter
+            Subscribe to Our Newsletter
           </h2>
 
           <div className="flex space-x-6">
