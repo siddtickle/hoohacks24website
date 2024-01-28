@@ -49,7 +49,7 @@ export default function FAQ() {
     playOnMount: false,
   });
   const { ref: textRef4, replay: replay4 } = useScramble({
-    text: "All current undergraduate, graduate, and high school students at least 16 years of age may attend HooHacks. <strong>No coding experience is necessary!</strong> Non-STEM majors, first-time hackers, and beginner coders are welcomed and encouraged to join us!",
+    text: "All current undergraduate, graduate, and high school students at least 18 years of age may attend HooHacks. <strong>No coding experience is necessary!</strong> Non-STEM majors, first-time hackers, and beginner coders are welcomed and encouraged to join us!",
     speed: 0,
     tick: 0,
     step: 0,
