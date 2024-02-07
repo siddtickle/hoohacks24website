@@ -71,7 +71,7 @@ export default function Home() {
                 space_mono.className +
                 " bg-teal-700 hover:bg-teal-900 text-white font-bold py-3 px-10 text-l rounded-lg"
               }
-              href="https://drive.google.com/file/d/1bJ1FpzB6wKJQAW3I_kDMudLm3t76S70H/view"
+              href="mailto:team@hoohacks.io"
               target="_blank"
               style={{ marginLeft: "15px", marginTop: "10px" }}
             >
