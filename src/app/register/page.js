@@ -1,6 +1,6 @@
 import styles from "../styles/button.css"
 
-function Register(){
+export default function Register(){
     return (
         <div class="relative overflow-hidden flex items-center justify-center flex-col">
             <img
@@ -18,4 +18,3 @@ function Register(){
 
     );
 }
-export default Register;
