@@ -59,7 +59,7 @@ export default function FAQ() {
   });
 
   const { ref: textRef5, replay: replay5 } = useScramble({
-    text: "Schedule, location, team information, and more.",
+    text: "We are providing multiple forms of travel reimbursement: free bus routes, train + plane ticket reimbursement, and gas reimbursement.  More details on our policy can be found <a href='https://bit.ly/hoohacks2024travelreimbursement' style='text-decoration: underline; font-weight: bold;'>here</a>.",
     speed: 0,
     tick: 0,
     step: 0,
@@ -154,7 +154,7 @@ export default function FAQ() {
               style={{ textAlign: "center", marginBottom: 20 }}
               ref={ref}
             >
-              Coming Soon!
+              Travel Reimbursement
             </h2>
             <h3
               className={space_mono.className + " FAQContent"}
@@ -271,7 +271,7 @@ export default function FAQ() {
               aria-controls="panel3-content"
               id="panel3-header"
             >
-              Coming Soon!
+              Will there be travel reimbursement?
             </AccordionSummary>
             <AccordionDetails>
               Schedule, location, team information, and more.

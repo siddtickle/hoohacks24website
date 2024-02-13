@@ -209,7 +209,33 @@ html {
   background-color: #162628;
 } */
 
+#mlh-trust-badge {
+  display: block;
+  min-width: 60px;
+  max-width: 100px;
+  width: 10%;
+  position: fixed;
+  right: 12.5vw;
+  z-index: 10000;
+}
+#pinnacle-badge{
+  display: block;
+  min-width: 60px;
+  max-width: 100px;
+  width: 10%;
+  position: fixed;
+  right: 4vw;
+  z-index: 10000;
+}
+.popup-content{margin:auto;background:#fff;width:60%;padding:5px;border:1px solid #fff;border-radius:10px;z-index:1000000;overflow:auto}[role=tooltip]
+.popup-content{width: 300px;;box-shadow:0 0 3px rgba(0,0,0,.16);border-radius:5px}
+.popup-overlay{background:rgba(0,0,0,.5)}[data-popup=tooltip]
+.popup-overlay{background:transparent}
+.popup-arrow{-webkit-filter:drop-shadow(0 -3px 3px rgba(0,0,0,.16));filter:drop-shadow(0 -3px 3px rgba(0,0,0,.16));color:#fff;stroke-width:2px;stroke:#d7d7d7;stroke-dasharray:30px;stroke-dashoffset:-54px;left:0;right:0;top:0;bottom:0}
 @media screen and (max-width: 1024px) {
+  .popup-content {
+    width: 80%;
+  }
   .welcomeImage {
     max-height: 90vh;
   }
@@ -273,6 +299,9 @@ html {
     margin-top: 40px;
     width: 75vw;
   }
+  #mlh-trust-badge {
+    right: 23vw;
+  }
 }
 
 * {
@@ -294,3 +323,11 @@ html {
   height: 50vh; /* this value is not important, just not zero */
   position: relative;
 }
+/* display: "block",
+          maxWidth: "100px",
+          minWidth: "60px",
+          position: "fixed",
+          right: "12.5vw",
+          top: "0",
+          width: "10%",
+          zIndex: "10000", */
