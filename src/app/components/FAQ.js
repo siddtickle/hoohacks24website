@@ -274,7 +274,7 @@ export default function FAQ() {
               Will there be travel reimbursement?
             </AccordionSummary>
             <AccordionDetails>
-              Schedule, location, team information, and more.
+            We are providing multiple forms of travel reimbursement: free bus routes, train + plane ticket reimbursement, and gas reimbursement.  More details on our policy can be found <a href='https://bit.ly/hoohacks2024travelreimbursement' class="text-orange-500">here</a>.
             </AccordionDetails>
           </Accordion>
           <Accordion
