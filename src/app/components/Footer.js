@@ -27,6 +27,7 @@ export default function Footer() {
           <FaLinkedin size={24} />
         </a>
       </div>
+      <a className={mohave.className + " hover:text-teal-500"} target="_blank" href="https://hackp.ac/coc">MLH Code of Conduct</a>
       <p className={mohave.className}>
         &copy; 2024 HooHacks ~ Made in Charlottesville
       </p>
