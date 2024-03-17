@@ -68,7 +68,7 @@ export default function FAQ() {
     playOnMount: false,
   });
   const { ref: textRef6, replay: replay6 } = useScramble({
-    text: "Feel free to contact us at <a href='mailto:team@hoohacks.io' style='text-decoration: underline; font-weight: bold;'>team@hoohacks.io</a> or message us on <a href='https://www.facebook.com/hoohacks' style='text-decoration: underline; font-weight: bold;'>Facebook</a> if you have any questions, concerns, or feedback!",
+    text: "Feel free to contact us at <a href='mailto:hackathon.virginia@gmail.com' style='text-decoration: underline; font-weight: bold;'>team@hoohacks.io</a> or message us on <a href='https://www.facebook.com/hoohacks' style='text-decoration: underline; font-weight: bold;'>Facebook</a> if you have any questions, concerns, or feedback!",
     speed: 0,
     tick: 0,
     step: 0,
@@ -291,7 +291,7 @@ export default function FAQ() {
               Have more questions?
             </AccordionSummary>
             <AccordionDetails>
-              Feel free to contact us at <a href='mailto:team@hoohacks.io' class="text-orange-500">team@hoohacks.io</a> or message us on 
+              Feel free to contact us at <a href='mailto:hackathon.virginia@gmail.com' class="text-orange-500">team@hoohacks.io</a> or message us on 
               <a href='https://www.facebook.com/hoohacks'class="text-orange-500"> Facebook</a> if you have any questions, concerns, or feedback!
             </AccordionDetails>
           </Accordion>
