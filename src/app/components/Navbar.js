@@ -55,6 +55,14 @@ const Navbar = () => {
             </Link>
             <Link
               class="hover:text-teal-500"
+              href="/#tracks"
+              style={{ fontSize: 20 }}
+            >
+              Prize Tracks
+              {/* <a className="text-white">Sponsors</a> */}
+            </Link>
+            <Link
+              class="hover:text-teal-500"
               href="/#sponsor"
               style={{ fontSize: 20 }}
             >

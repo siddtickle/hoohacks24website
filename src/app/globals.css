@@ -141,6 +141,40 @@ h1 {
   font-size: 1.5vw;
 }
 
+.TracksSubtitle {
+  margin-bottom: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.TracksContainer {
+  margin-top: 1cap;
+  margin-bottom: 150px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.TracksAccordionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75vw;
+}
+
+.TracksTitle {
+  font-size: 40px;
+}
+
+ul {
+  padding-left: 10px;
+  list-style-type: square;
+  list-style-position: outside;
+}
+
 .FAQContent {
   font-size: 1vw;
 }
@@ -218,7 +252,7 @@ html {
   right: 12.5vw;
   z-index: 10000;
 }
-#pinnacle-badge{
+#pinnacle-badge {
   display: block;
   min-width: 60px;
   max-width: 100px;
@@ -227,11 +261,40 @@ html {
   right: 4vw;
   z-index: 10000;
 }
-.popup-content{margin:auto;background:#fff;width:60%;padding:5px;border:1px solid #fff;border-radius:10px;z-index:1000000;overflow:auto}[role=tooltip]
-.popup-content{width: 300px;;box-shadow:0 0 3px rgba(0,0,0,.16);border-radius:5px}
-.popup-overlay{background:rgba(0,0,0,.5)}[data-popup=tooltip]
-.popup-overlay{background:transparent}
-.popup-arrow{-webkit-filter:drop-shadow(0 -3px 3px rgba(0,0,0,.16));filter:drop-shadow(0 -3px 3px rgba(0,0,0,.16));color:#fff;stroke-width:2px;stroke:#d7d7d7;stroke-dasharray:30px;stroke-dashoffset:-54px;left:0;right:0;top:0;bottom:0}
+.popup-content {
+  margin: auto;
+  background: #fff;
+  width: 60%;
+  padding: 5px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  z-index: 1000000;
+  overflow: auto;
+}
+[role="tooltip"] .popup-content {
+  width: 300px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+}
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+[data-popup="tooltip"] .popup-overlay {
+  background: transparent;
+}
+.popup-arrow {
+  -webkit-filter: drop-shadow(0 -3px 3px rgba(0, 0, 0, 0.16));
+  filter: drop-shadow(0 -3px 3px rgba(0, 0, 0, 0.16));
+  color: #fff;
+  stroke-width: 2px;
+  stroke: #d7d7d7;
+  stroke-dasharray: 30px;
+  stroke-dashoffset: -54px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
 @media screen and (max-width: 1024px) {
   .popup-content {
     width: 80%;
