@@ -114,6 +114,14 @@ export default function Home() {
                       textAlign: "left",
                     }}
                   >
+                    <mark>
+                      UPDATE: We are no longer accepting sponsorship
+                      applications for HooHacks 2024.
+                    </mark>{" "}
+                    If you are interested in sponsoring HooHacks in the future,
+                    please reach out to us and we'll get back to you as soon as
+                    possible! <br />
+                    <br></br>
                     <b>WHAT?</b> HooHacks is Virginia's biggest hackathon as
                     well as one of the top 50 collegiate hackathons in the
                     world! Last year we had over 1,000 hackers register and over
@@ -128,17 +136,13 @@ export default function Home() {
                     <br></br>
                     <b>How?</b> Email us and learn more about sponsorship
                     opportunities by clicking the button below! <br></br>
-                    <br></br>
-                    <b>
-                      ⚠️The deadline to confirm a sponsorship is February 23.
-                    </b>
                   </p>
                   <a
                     className={
                       space_mono.className +
                       " bg-teal-700 hover:bg-teal-900 text-white font-bold py-3 px-10 text-l rounded-lg"
                     }
-                    href="mailto:team@hoohacks.io"
+                    href="mailto:hackathon.virginia@gmail.com"
                     target="_blank"
                     style={{ marginTop: "10px" }}
                   >

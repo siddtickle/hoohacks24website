@@ -68,7 +68,7 @@ export default function FAQ() {
     playOnMount: false,
   });
   const { ref: textRef6, replay: replay6 } = useScramble({
-    text: "Feel free to contact us at <a href='mailto:hackathon.virginia@gmail.com' style='text-decoration: underline; font-weight: bold;'>team@hoohacks.io</a> or message us on <a href='https://www.facebook.com/hoohacks' style='text-decoration: underline; font-weight: bold;'>Facebook</a> if you have any questions, concerns, or feedback!",
+    text: "Feel free to contact us at <a href='mailto:hackathon.virginia@gmail.com' style='text-decoration: underline; font-weight: bold;'>hackathon.virginia@gmail.com</a> or message us on <a href='https://www.facebook.com/hoohacks' style='text-decoration: underline; font-weight: bold;'>Facebook</a> if you have any questions, concerns, or feedback!",
     speed: 0,
     tick: 0,
     step: 0,
@@ -274,7 +274,16 @@ export default function FAQ() {
               Will there be travel reimbursement?
             </AccordionSummary>
             <AccordionDetails>
-            We are providing multiple forms of travel reimbursement: free bus routes, train + plane ticket reimbursement, and gas reimbursement.  More details on our policy can be found <a href='https://bit.ly/hoohacks2024travelreimbursement' class="text-orange-500">here</a>.
+              We are providing multiple forms of travel reimbursement: free bus
+              routes, train + plane ticket reimbursement, and gas reimbursement.
+              More details on our policy can be found{" "}
+              <a
+                href="https://bit.ly/hoohacks2024travelreimbursement"
+                class="text-orange-500"
+              >
+                here
+              </a>
+              .
             </AccordionDetails>
           </Accordion>
           <Accordion
@@ -291,8 +300,22 @@ export default function FAQ() {
               Have more questions?
             </AccordionSummary>
             <AccordionDetails>
-              Feel free to contact us at <a href='mailto:hackathon.virginia@gmail.com' class="text-orange-500">team@hoohacks.io</a> or message us on 
-              <a href='https://www.facebook.com/hoohacks'class="text-orange-500"> Facebook</a> if you have any questions, concerns, or feedback!
+              Feel free to contact us at{" "}
+              <a
+                href="mailto:hackathon.virginia@gmail.com"
+                class="text-orange-500"
+              >
+                hackathon.virginia@gmail.com
+              </a>{" "}
+              or message us on
+              <a
+                href="https://www.facebook.com/hoohacks"
+                class="text-orange-500"
+              >
+                {" "}
+                Facebook
+              </a>{" "}
+              if you have any questions, concerns, or feedback!
             </AccordionDetails>
           </Accordion>
         </div>
